@@ -16,16 +16,19 @@ _In terminal, navigate to your desktop and execute:_
 * git clone https://github.com/thejensen/javascript_github-search
 * cd javascript_github-search
 
-_Open the project in your favorite text editor. On the toplevel of the project directory, create an .env file_
+_Open the project in your favorite text editor._
 
-_(If you do not have an API key)_
+* On the toplevel of the project directory, create a new file called .env
+
+_(If you do not have an API key (see below for obtaining a key))_
 
 * exports.apiKey = "";
+* Save the file
 
 _(If you DO have a github API key)_
 
 * exports.apiKey = "YOUR-API-KEY";
-* Save
+* Save the file
 
 _Back in terminal_
 
@@ -37,6 +40,15 @@ _Back in terminal_
 _Note: if you a new dependency to your gulpfile.js, execute ctrl+c in terminal to exit the serve task, then run gulp jsBuild. You can then gulp serve again._
 
 _For more information about these tasks, see the file, installation-instructions-expanded.txt in this repository._
+
+## About GitHub API Keys or Personal Access Tokens
+
+_Use the GitHub API to retrieve this information. This API allows 5,000 requests per hour with an API key, but only 60 requests per hour without one. Everyone is therefore required to use their own unique key. GitHub refers to these keys as "Personal Access Tokens"._
+
+**Creating Personal Access Tokens**
+
+Visit the Settings area of your GitHub account, select Personal Access Tokens from the sidebar, and hit Generate New Token.
+GitHub will offer a list of options. Do not select any. These grant read/write permissions and access to personal data. Finally, select Generate Token.
 
 ## User Stories
 
