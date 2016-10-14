@@ -5,7 +5,7 @@ var displayUserData = function(name, location, email, htmlUrl) {
 };
 
 var displayRepos = function(name, language, created, description, url) {
-  $('#repo-results').append('<li><span id="name">' + name + ' | ' + language + '</span><br>' + created + '<br>' + description + '<br>' + url + '</li>');
+  $('#repo-results').append('<li><span id="name">' + name + ' | ' + language + '</span><br> Created ' + created + '<br>' + description + '<br>' + url + '</li>');
 };
 
 var userFail = function(message) {
