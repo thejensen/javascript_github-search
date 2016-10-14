@@ -1,5 +1,4 @@
 var User = require('./../js/user.js').userModule;
-var getRepos = require('./../js/user.js').getRepos;
 
 var displayUserData = function(name, location, email) {
   $('#profile-results').text(name + ' | ' + location + ' | ' + email);
