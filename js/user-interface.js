@@ -2,16 +2,17 @@ var User = require('./../js/user.js').userModule;
 var getRepos = require('./../js/user.js').getRepos;
 
 var displayUserData = function(name, location, email) {
-  $('#profile-results').text(name + ' | ' + location + ' | ' + email + ' | ');
+  $('#profile-results').text(name + ' | ' + location + ' | ' + email);
 };
 
-var displayRepos = function(archive_url) {
-  $('#repo-results').append('<li>' + archive_url + '</li>');
+var displayRepos = function(url, name, description) {
+  $('#repo-results').append('<li>' + name + '<br>' + description + '<br>' + url + '</li>');
 };
 
 $(document).ready(function() {
   $('#user-search-form').submit(function(event){
     event.preventDefault();
+    $("#repo-results").html("");
     var username = $('#username').val();
     var newUser = new User();
     newUser.getUserProfile(username, displayUserData);
