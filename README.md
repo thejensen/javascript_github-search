@@ -15,13 +15,20 @@ _To run app locally:_
 _In terminal, navigate to your desktop and execute:_
 * git clone https://github.com/thejensen/javascript_github-search
 * cd javascript_github-search
+
 _Open the project in your favorite text editor. On the toplevel of the project directory, create an .env file_
+
 _(If you do not have an API key)_
+
 * exports.apiKey = "";
+
 _(If you DO have a github API key)_
+
 * exports.apiKey = "YOUR-API-KEY";
 * Save
+
 _Back in terminal_
+
 * npm install
 * bower install
 * gulp build
