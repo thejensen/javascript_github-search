@@ -35,6 +35,7 @@ _For more information about these tasks, see the file, installation-instructions
 | --- | --- | --- |
 | Program returns a list of public github repos with name, description, and url | thejensen | java-courseware; Group Project for Week 5, Java at Epicodus - A web-based platform to create and administer courses of all types; https://api.github.com/repos/thejensen/java-courseware -- etc. |
 | Program returns name, location, email, and github profile url | thejensen | Sara Jensen; Portland, OR; jensen.sara.e@gmail.com; http://github.com/thejensen |
+| Program returns error message if a user is not found | losiento | Sorry! User is Not Found. | 
 
 ## Known Bugs
 
