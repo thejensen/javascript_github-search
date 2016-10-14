@@ -19,6 +19,7 @@ _In terminal, navigate to your desktop and execute:_
 _Open the project in your favorite text editor._
 
 * On the toplevel of the project directory, create a new file called .env
+* Open the file, and enter the following in the file if you do or do NOT have a github API key:
 
 _(If you do not have an API key (see below for obtaining a key))_
 
