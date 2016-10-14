@@ -12,9 +12,16 @@ _**If you're interested in the list of public repos by a user on github, use the
 ## Setup/Installation Requirements
 
 _To run app locally:_
-* In terminal, navigate to your desktop and execute:
+_In terminal, navigate to your desktop and execute:_
 * git clone https://github.com/thejensen/javascript_github-search
 * cd javascript_github-search
+_Open the project in your favorite text editor. On the toplevel of the project directory, create an .env file_
+_(If you do not have an API key)_
+* exports.apiKey = "";
+_(If you DO have a github API key)_
+* exports.apiKey = "YOUR-API-KEY";
+* Save
+_Back in terminal_
 * npm install
 * bower install
 * gulp build
@@ -35,7 +42,7 @@ _For more information about these tasks, see the file, installation-instructions
 | --- | --- | --- |
 | Program returns a list of public github repos with name, description, and url | thejensen | java-courseware; Group Project for Week 5, Java at Epicodus - A web-based platform to create and administer courses of all types; https://api.github.com/repos/thejensen/java-courseware -- etc. |
 | Program returns name, location, email, and github profile url | thejensen | Sara Jensen; Portland, OR; jensen.sara.e@gmail.com; http://github.com/thejensen |
-| Program returns error message if a user is not found | losiento | Sorry! User is Not Found. | 
+| Program returns error message if a user is not found | losiento | Sorry! User is Not Found. |
 
 ## Known Bugs
 
