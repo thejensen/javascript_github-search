@@ -5,7 +5,7 @@ User = function(){
 
 User.prototype.getUserProfile = function(username, displayUserData, userFail) {
   console.log(apiKey);
-  if (apiKey === "") {
+  if (apiKey === undefined) {
     $.get('https://api.github.com/users/' + username).then(function(response){
       displayUserData(response.name, response.location, response.email, response.html_url);
     }).fail(function(error){
@@ -22,7 +22,7 @@ User.prototype.getUserProfile = function(username, displayUserData, userFail) {
 
 
 User.prototype.getRepos = function(username, displayRepos, reposFail) {
-  if (apiKey === "") {
+  if (apiKey === undefined) {
     $.get('https://api.github.com/users/' + username + '/repos').then(function(response){
       for(i=0; i<response.length; i++) {
         console.log(response);

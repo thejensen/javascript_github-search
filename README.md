@@ -12,33 +12,23 @@ _**If you're interested in the list of public repos by a user on github, use the
 ## Setup/Installation Requirements
 
 _To run app locally:_
-_In terminal, navigate to your desktop and execute:_
+_In terminal, navigate to your desktop and execute the following:_
+
 * git clone https://github.com/thejensen/javascript_github-search
 * cd javascript_github-search
-
-_Open the project in your favorite text editor._
-
-* On the toplevel of the project directory, create a new file called .env
-* Open the file, and enter the following in the file if you do or do NOT have a github API key:
-
-_(If you do not have an API key (see below for obtaining a key))_
-
-* exports.apiKey = "";
-* Save the file
-
-_(If you DO have a github API key)_
-
-* exports.apiKey = "YOUR-API-KEY";
-* Save the file
-
-_Back in terminal_
-
+* touch .env
 * npm install
 * bower install
 * gulp build
 * gulp serve
 
-_Note: if you a new dependency to your gulpfile.js, execute ctrl+c in terminal to exit the serve task, then run gulp jsBuild. You can then gulp serve again._
+
+_(If you happen to have a github API key go into the empty .env file and add...)_
+
+* exports.apiKey = "YOUR-API-KEY";
+* Save the file
+* gulp build
+* gulp serve
 
 _For more information about these tasks, see the file, installation-instructions-expanded.txt in this repository._
 
