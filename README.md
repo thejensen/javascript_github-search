@@ -12,7 +12,7 @@ _**If you're interested in the list of public repos by a user on github, use the
 ## Setup/Installation Requirements
 
 _To run app locally:_
-_In terminal, navigate to your desktop and execute the following:_
+_In terminal, navigate to your desktop and execute the following (feel free to copy and paste all commands at once):_
 
 * git clone https://github.com/thejensen/javascript_github-search
 * cd javascript_github-search
@@ -23,7 +23,7 @@ _In terminal, navigate to your desktop and execute the following:_
 * gulp serve
 
 
-_(If you happen to have a github API key go into the empty .env file and add...)_
+_(After the app is running and you happen to have a github API key go into the empty .env file and add...)_
 
 * exports.apiKey = "YOUR-API-KEY";
 * Save the file
