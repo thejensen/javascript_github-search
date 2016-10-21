@@ -1,7 +1,11 @@
 var User = require('./../js/user.js').userModule;
 
 var displayUserData = function(name, location, email, htmlUrl) {
+<<<<<<< HEAD
   $('#profile-results').append('<div class="col-sm-4">Name: ' + name + '</div><div class="col-sm-4">Location: ' + location + '</div><div class="col-sm-4">Email: ' + email + '</div><br>' + htmlUrl + '<hr>');
+=======
+  $('#profile-results').append('<div class="col-sm-4">' + name + '</div><div class="col-sm-4">' + location + '</div><div class="col-sm-4">' + email + '</div><br>' + htmlUrl + '<hr>');
+>>>>>>> 4f708b2222cfc95605e6220adc7f157d2c685041
 };
 
 var displayRepos = function(name, language, created, description, url) {
